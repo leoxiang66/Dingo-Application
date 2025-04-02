@@ -1,65 +1,18 @@
-# Wails + Svelte 5 Template
+# Dingo Application
 
-Modern Wails template using Svelte 5, Tailwind CSS, and shadcn-svelte components.
+🎯 Written with [Wails](https://github.com/wailsapp/wails) framework.
+- Frontend: 
+    - <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/800px-Svelte_Logo.svg.png" width="15px" /> Svelte
+    - <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/512px-Tailwind_CSS_Logo.svg.png?20230715030042" width="15px" /> Tailwind CSS
+    - <img src="https://avatars.githubusercontent.com/u/76870092?s=280&v=4" width="15px" /> DaisyUI
+    - <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Chart.js_logo.svg/1200px-Chart.js_logo.svg.png" width="15px" /> Chart.js
+- Backend:
+    - <img src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png" width="15px" /> Go
+<!-- 📦 操作简单、可获取不同类型资源  
+🖥️ 支持Windows、Mac、Linux  
+🌐 支持视频、音频、图片、m3u8、直播流等常见网络资源  
+💪 支持微信视频号、小程序、抖音、快手、小红书、酷狗音乐、qq音乐等网络资源下载  
+👼 支持设置代理以获取特殊网络下的资源   -->
 
-## Features
 
-- Svelte 5 with TypeScript
-- Tailwind CSS for styling
-- shadcn-svelte components
-- Vite for frontend tooling
-- Go backend with Wails
-
-## Requirements
-
-- Go 1.21+
-- Node.js 18+
-- Wails CLI v2.7.0+
-
-## Quick Start
-
-```bash
-# Create new project
-wails init -n myapp -t https://github.com/bnema/wails-vite-svelte5-ts-taildwind-shadcn-template
-
-# Install dependencies
-cd myapp/frontend
-npm install
-
-# Start development
-cd ..
-wails dev
-```
-
-## Development
-
-Add shadcn components:
-```bash
-npx shadcn-svelte@next add [component-name]
-```
-
-## Building
-
-Build production binary:
-```bash
-wails build
-```
-
-## Project Structure
-
-```
-├── frontend/          # Svelte frontend
-│   ├── src/
-│   └── package.json
-├── app.go            # Backend logic
-└── main.go           # Entry point
-```
-
-## License
-
-MIT License
-
-## Support
-
-- GitHub Issues
-- [Wails Discord](https://discord.gg/wails)
+# App Screenshots
