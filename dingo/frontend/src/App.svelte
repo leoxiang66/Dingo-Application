@@ -6,7 +6,7 @@
   import {page_idx } from "./stores";
 </script>
 
-<div class="w-screen h-screen overflow-hidden bg-white">
+<div class="w-screen h-screen overflow-hidden bg-white font-mono">
   {#if $page_idx === 0}
     <Home />
     {:else if $page_idx === 1}
