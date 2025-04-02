@@ -1,6 +1,6 @@
 # Dingo Application
 
-🎯 Written with [Wails](https://github.com/wailsapp/wails) framework.
+Written with [Wails](https://github.com/wailsapp/wails) framework.
 - Frontend: 
     - <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/800px-Svelte_Logo.svg.png" width="15px" /> Svelte
     - <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/512px-Tailwind_CSS_Logo.svg.png?20230715030042" width="15px" /> Tailwind CSS
