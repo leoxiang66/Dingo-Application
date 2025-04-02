@@ -6,3 +6,7 @@
 .sidebar-item {
     @apply text-black w-[90%] rounded-lg p-2 flex items-center justify-center font-bold transform ease-in duration-75
 }
+
+.mytr{
+    @apply hover:bg-green-100/30
+}
