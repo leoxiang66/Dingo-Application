@@ -7,6 +7,12 @@
 *.dll
 *.so
 *.dylib
+**dingo/build/bin/**
+**node_modules**
+**dist**
+**yarn.lock
+**vscode**
+**idea**
 
 # Test binary, built with `go test -c`
 *.test
@@ -19,7 +25,3 @@
 
 # Go workspace file
 go.work
-go.work.sum
-
-# env file
-.env
