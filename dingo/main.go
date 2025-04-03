@@ -23,6 +23,7 @@ func main() {
 	app := NewApp()
 
 	go dockerbackend.ExampleUsage()
+	go dockerbackend.Get_all_images()
 
 	// Create application with options
 	err := wails.Run(&options.App{

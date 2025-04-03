@@ -3,7 +3,7 @@
 </script>
 
 <div
-  class="shadow-lg overflow-auto h-3/4 w-3/4 bg-white block m-auto rounded-xl text-black"
+  class="shadow-lg overflow-auto h-4/5 w-[85%] bg-white block m-auto rounded-xl text-black"
 >
   <table class="table">
     <!-- head -->

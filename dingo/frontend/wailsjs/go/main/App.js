@@ -6,6 +6,10 @@ export function Get_all_containers() {
   return window['go']['main']['App']['Get_all_containers']();
 }
 
+export function Get_all_images() {
+  return window['go']['main']['App']['Get_all_images']();
+}
+
 export function Greet(arg1) {
   return window['go']['main']['App']['Greet'](arg1);
 }

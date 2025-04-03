@@ -47,3 +47,7 @@ func (a *App) Greet(name string) string {
 func (a *App) Get_all_containers() dockerbackend.Containers{
 	return dockerbackend.Get_all_containers()
 }
+
+func (a *App) Get_all_images() dockerbackend.Images{
+	return dockerbackend.Get_all_images()
+}

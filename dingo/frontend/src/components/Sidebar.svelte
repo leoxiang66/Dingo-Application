@@ -67,6 +67,6 @@
   </div>
 
   <div
-    class="ml-[-1px] divider divider-horizontal before:w-[0.1px] after:w-[0.1px] before:bg-gray-300/30 after:bg-gray-300/30"
+    class="ml-[-1px] mr-0 divider divider-horizontal before:w-[0.1px] after:w-[0.1px] before:bg-gray-300/30 after:bg-gray-300/30"
   ></div>
 </div>

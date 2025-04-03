@@ -4,4 +4,6 @@ import {dockerbackend} from '../models';
 
 export function Get_all_containers():Promise<dockerbackend.Containers>;
 
+export function Get_all_images():Promise<dockerbackend.Images>;
+
 export function Greet(arg1:string):Promise<string>;

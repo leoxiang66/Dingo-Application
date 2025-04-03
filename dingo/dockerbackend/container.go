@@ -139,4 +139,7 @@ func (cs Containers) PrintTable() {
 func ExampleUsage() {
 	containers := Get_all_containers()
 	containers.PrintTable()
+
+	images := Get_all_images()
+	images.PrintTable()
 }
