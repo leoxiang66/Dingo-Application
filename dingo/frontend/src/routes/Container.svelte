@@ -1,9 +1,9 @@
 <script>
-  import Sidebar from "../components/Sidebar.svelte";
-  import Table from "../components/Table.svelte";
+import ContainerTable from "../components/ContainerTable.svelte";
+import Sidebar from "../components/Sidebar.svelte";
 </script>
 
 <div class="flex w-full h-full">
   <Sidebar />
-  <Table />
+  <ContainerTable />
 </div>

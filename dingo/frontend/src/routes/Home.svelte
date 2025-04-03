@@ -1,5 +1,5 @@
 <script>
-  import Demo from "../components/Demo.svelte";
+  import ContainerChart from "../components/ContainerChart.svelte";
   import Sidebar from "../components/Sidebar.svelte";
 </script>
 
@@ -10,11 +10,11 @@
     <div class="flex flex-col">
       <div class="flex justify-center items-center">
         <div class="mx-10 card shadow-lg">
-          <div class="card-body"><Demo /></div>
+          <div class="card-body"><ContainerChart /></div>
         </div>
 
         <div class="mx-10 card shadow-lg">
-          <div class="card-body"><Demo /></div>
+          <div class="card-body"><ContainerChart /></div>
         </div>
       </div>
 

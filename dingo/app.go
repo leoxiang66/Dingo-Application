@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
+	"dingo/dockerbackend"
 )
 
 // App struct
@@ -41,4 +42,8 @@ func (a *App) shutdown(ctx context.Context) {
 // Greet returns a greeting for the given name
 func (a *App) Greet(name string) string {
 	return fmt.Sprintf("Hello %s, It's show time!", name)
+}
+
+func (a *App) Get_all_containers() dockerbackend.Containers{
+	return dockerbackend.Get_all_containers()
 }

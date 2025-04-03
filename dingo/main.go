@@ -22,11 +22,13 @@ func main() {
 	// Create an instance of the app structure
 	app := NewApp()
 
+	go dockerbackend.ExampleUsage()
+
 	// Create application with options
 	err := wails.Run(&options.App{
 		Title:             "Dingo",
-		Width:             1024,
-		Height:            768,
+		Width:             1600,
+		Height:            900,
 		MinWidth:          1024,
 		MinHeight:         768,
 		MaxWidth:          1280,
@@ -85,5 +87,5 @@ func main() {
 		log.Fatal(err)
 	}
 
-	go dockerbackend.List_all_containers()
+	
 }
