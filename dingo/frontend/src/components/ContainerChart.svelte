@@ -13,9 +13,11 @@
   onMount(() => {
     // Prepare data from containers
     const containerData = $containers.map(container => {
+
+      console.log(`Container ${container.ID} size: ${container.SizeMB}MB`); // 调试日志
       return {
         name: container.Names[0]?.replace('/', '') || container.ID.slice(0, 12),
-        size: container.SizeRw 
+        size: container.SizeMB
       };
     });
 

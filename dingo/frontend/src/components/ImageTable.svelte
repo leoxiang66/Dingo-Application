@@ -25,10 +25,10 @@
         <th>#</th>
         <th>IMAGE ID</th>
         <th>REPOSITORY:TAG</th>
-        <th>SIZE</th>
-        <th>SHARED SIZE</th>
+        <!-- <th>SIZE</th>
+        <th>SHARED SIZE</th> -->
         <th>CREATED</th>
-        <th>VIRTUAL SIZE</th>
+        <!-- <th>VIRTUAL SIZE</th> -->
         <th>ACTIONS</th>
       </tr>
     </thead>
@@ -50,12 +50,12 @@
               &lt;none&gt;:&lt;none&gt;
             {/if}
           </td>
-          <td>{toMB(image.Size)}</td>
-          <td>{toMB(image.SharedSize)}</td>
+          <!-- <td>{toMB(image.Size)}</td>
+          <td>{toMB(image.SharedSize)}</td> -->
           <td>
             {toString(image.Created)}
           </td>
-          <td>{toMB(image.VirtualSize)}</td>
+          <!-- <td>{toMB(image.VirtualSize)}</td> -->
           <td>
             <div class="flex justify-center items-center">
               <RemoveImage {image} />

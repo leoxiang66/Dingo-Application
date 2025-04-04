@@ -10,3 +10,7 @@ Written with [Wails](https://github.com/wailsapp/wails) framework.
     - <img src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png" width="15px" /> Go
 
 # App Screenshots
+
+![](demo/image1.png)
+![](demo/image2.png)
+![](demo/image3.png)

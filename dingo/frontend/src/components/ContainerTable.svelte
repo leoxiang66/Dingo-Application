@@ -21,7 +21,7 @@
         <th>#</th>
         <th>ID</th>
         <th>Image</th>
-        <th>Command</th>
+        <!-- <th>Command</th> -->
         <th>Created</th>
         <th>Status</th>
         <!-- <th>Size</th> -->
@@ -36,7 +36,7 @@
           <th>{index + 1}</th>
           <td class="font-mono">{toString(container.ID).slice(0, 12)}</td>
           <td>{toString(container.Image)}</td>
-          <td>{toString(container.Command)}</td>
+          <!-- <td>{toString(container.Command)}</td> -->
           <td>{toString(container.Created)}</td>
           <td>{toString(container.Status)}</td>
           <!-- <td>{toString(container.SizeRw)} bytes</td> -->
