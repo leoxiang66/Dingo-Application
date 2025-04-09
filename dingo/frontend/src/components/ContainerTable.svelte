@@ -1,5 +1,5 @@
 <script>
-  import { containers } from "../stores";
+  import { load_container_data } from "../stores";
   import StartCtn from "./StartCtn.svelte";
   import StopCtn from "./StopCtn.svelte";
 
@@ -9,6 +9,14 @@
     if (typeof value === "object") return JSON.stringify(value);
     return String(value);
   }
+
+  let containers = [];
+
+  // Use an immediately-invoked async function
+  (async () => {
+    containers = await load_container_data();
+  })();
+
 </script>
 
 <div
@@ -19,7 +27,7 @@
     <thead class="text-black bg-green-200">
       <tr>
         <th>#</th>
-        <th>ID</th>
+        <th>Container ID</th>
         <th>Image</th>
         <!-- <th>Command</th> -->
         <th>Created</th>
@@ -31,7 +39,7 @@
       </tr>
     </thead>
     <tbody>
-      {#each $containers as container, index}
+      {#each containers as container, index}
         <tr class="hover:bg-green-100/30 text-sm font-thin h-[100px]">
           <th>{index + 1}</th>
           <td class="font-mono">{toString(container.ID).slice(0, 12)}</td>

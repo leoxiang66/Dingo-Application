@@ -1,30 +1,23 @@
-import { writable } from "svelte/store";
-import { Get_all_containers ,Get_all_images} from "../wailsjs/go/main/App";
+// import { writable } from "svelte/store";
+import { Get_all_containers, Get_all_images } from "../wailsjs/go/main/App";
 
 // Initialize stores
-export const page_idx = writable(0);
-export const containers = writable([]);
-export const images = writable([]);
+// export const page_idx = writable(0);
+// export const containers = writable([]);
+// export const images = writable([]);
 
-
-
-async function load_img_data() {
+export async function load_img_data() {
     try {
-        const imageData = await Get_all_images();
-        images.set(imageData);
+        return await Get_all_images();
     } catch (error) {
         console.error("Failed to load images:", error);
     }
 }
 
-async function load_container_data() {
+export async function load_container_data() {
     try {
-        const containerData = await Get_all_containers();
-        containers.set(containerData);
+        return await Get_all_containers();
     } catch (error) {
         console.error("Failed to load containers:", error);
     }
 }
-
-load_img_data();
-load_container_data();

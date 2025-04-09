@@ -1,7 +1,7 @@
 <script>
   import { Chart, registerables } from "chart.js";
   import { onMount } from "svelte";
-  import { images } from "../stores";
+  import { load_img_data } from "../stores";
 
   let chartId = "chart-" + Math.random().toString(36).substring(2, 9);
   
@@ -9,7 +9,7 @@
   
   let chartInstance;
   
-  onMount(() => {
+  onMount(async() => {
     // Generate distinct colors for each image
     const generateColors = (count) => {
       const colors = [];
@@ -24,7 +24,8 @@
       return colors;
     };
 
-    const imageData = $images.map(image => {
+    let images = await load_img_data()
+    const imageData = images.map(image => {
       return {
         name: image.ID.slice(7, 19),
         size: image.Size / (1024 * 1024) // Convert to MB

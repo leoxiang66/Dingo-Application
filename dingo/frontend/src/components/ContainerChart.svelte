@@ -1,18 +1,21 @@
 <script>
   import { Chart, registerables } from "chart.js";
   import { onMount } from "svelte";
-  import { containers } from "../stores"; // Import your containers store
+  import { load_container_data } from "../stores"; // Import your containers store
 
   let chartId = "chart-" + Math.random().toString(36).substring(2, 9);
+  
   
   // 注册 Chart.js 的所有组件
   Chart.register(...registerables);
   
   let chartInstance;
   
-  onMount(() => {
+  onMount(async () => {
+    let containers = await load_container_data();
+
     // Prepare data from containers
-    const containerData = $containers.map(container => {
+    const containerData = containers.map(container => {
 
       console.log(`Container ${container.ID} size: ${container.SizeMB}MB`); // 调试日志
       return {

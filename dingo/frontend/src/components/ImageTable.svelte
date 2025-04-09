@@ -1,5 +1,5 @@
 <script>
-  import { images } from "../stores"; // Import your images store
+  import { load_img_data } from "../stores"; // Import your images store
   import RemoveImage from "./RemoveImage.svelte"; // Assuming you have an image removal component
 
   // Helper function to convert any value to string
@@ -13,6 +13,12 @@
   function toMB(bytes) {
     return bytes ? (bytes / (1024 * 1024)).toFixed(2) + " MB" : "-";
   }
+
+  let images = [];
+
+  (async () => {
+    images = await load_img_data()
+  })()
 </script>
 
 <div
@@ -33,7 +39,7 @@
       </tr>
     </thead>
     <tbody>
-      {#each $images as image, index}
+      {#each images as image, index}
         <tr class="hover:bg-green-100/30 text-sm font-thin h-[100px]">
           <th>{index + 1}</th>
           <td class="font-mono">
