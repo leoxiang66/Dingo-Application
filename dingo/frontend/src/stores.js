@@ -2,7 +2,7 @@
 import { Get_all_containers, Get_all_images } from "../wailsjs/go/main/App";
 
 // Initialize stores
-// export const page_idx = writable(0);
+export const page_idx = writable(0);
 // export const containers = writable([]);
 // export const images = writable([]);
 
