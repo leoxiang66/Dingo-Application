@@ -28,7 +28,7 @@
     const imageData = images.map(image => {
       return {
         name: image.ID.slice(7, 19),
-        size: image.Size / (1024 * 1024) // Convert to MB
+        size: image.Size / (1024 * 1024* 1024) // Convert to GB
       };
     });
 
@@ -41,7 +41,7 @@
         labels: imageData.map(item => item.name),
         datasets: [
           {
-            label: "Size (MB)",
+            label: "Size (GB)",
             data: imageData.map(item => item.size),
             backgroundColor: imageColors, // Different color for each image
             borderColor: "#fff",
@@ -59,7 +59,7 @@
             },
             title: {
               display: true,
-              text: 'Size (MB)'
+              text: 'Size (GB)'
             }
           },
           y: {
@@ -75,7 +75,7 @@
           tooltip: {
             callbacks: {
               label: (context) => 
-                `${context.raw.toFixed(2)} MB`
+                `${context.raw.toFixed(2)} GB`
             }
           }
         }

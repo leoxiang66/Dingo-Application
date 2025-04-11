@@ -72,7 +72,7 @@ export namespace dockerbackend {
 	    Size: number;
 	    SharedSize: number;
 	    VirtualSize: number;
-	    Labels: Record<string, string>;
+	    Labels: {[key: string]: string};
 	
 	    static createFrom(source: any = {}) {
 	        return new Image(source);

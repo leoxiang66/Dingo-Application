@@ -6,7 +6,7 @@ toolchain go1.23.4
 
 require (
 	github.com/docker/docker v28.0.4+incompatible
-	github.com/wailsapp/wails/v2 v2.10.1
+	github.com/wailsapp/wails/v2 v2.9.2
 )
 
 require (

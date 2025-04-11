@@ -20,7 +20,7 @@
       console.log(`Container ${container.ID} size: ${container.SizeMB}MB`); // 调试日志
       return {
         name: container.Names[0]?.replace('/', '') || container.ID.slice(0, 12),
-        size: container.SizeMB
+        size: container.SizeMB / 1024
       };
     });
 
@@ -31,7 +31,7 @@
         labels: containerData.map(item => item.name),
         datasets: [
           {
-            label: "Size (MB)",
+            label: "Size (GB)",
             data: containerData.map(item => item.size),
             backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"], // Keep original colors
             borderColor: ["#fff"], // 保持原边框颜色
@@ -61,7 +61,7 @@
           tooltip: {
             callbacks: {
               label: (context) => 
-                `${context.label}: ${context.raw} MB` // 修改为显示MB单位
+                `${context.label}: ${context.raw} GB` // 修改为显示GB单位
             }
           }
         }

@@ -6,7 +6,7 @@
   }
 </script>
 
-<button class="btn mx-1  btn-neutral btn-soft btn-sm" on:click={openModal}>start</button>
+<button class="btn btn-sm mx-1" on:click={openModal}>start</button>
 
 <dialog bind:this={modalRef} class="modal">
   <div class="modal-box">
